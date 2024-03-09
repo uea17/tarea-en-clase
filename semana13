@@ -1,0 +1,16 @@
+# crear una funcion para convertir grados centigrados a grados fahrenheit, a grados kelvin
+  # fahrenheit = (9/5)*(grad_cent)+32
+  # kelvin= 273.15+grad_cent
+
+def conversor(grados_cent):
+     fahrenheit = (9/5) * (grados_cent) + 32
+     kelvin = 273.15 + grados_cent
+
+     return fahrenheit, kelvin
+
+centigrados=int(input("ingrese grados centigrados="))
+
+result_far, result_kelvin = conversor(centigrados)
+
+print(centigrados, "grados centigrados es igual a ", result_far, "grados fahrenheit")
+print("kelvin", result_kelvin)
